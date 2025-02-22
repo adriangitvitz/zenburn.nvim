@@ -11,7 +11,7 @@ return {
     CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },            -- Primary text + secondary bg
     Debug = { fg = "#B85C5C", bold = true },                      -- Error red
     Define = { fg = "#FFD700", bold = true },                     -- Gold (func)
-    Delimiter = { fg = "#6A6A6A" },                               -- Disabled text
+    Delimiter = { fg = "#8f8f8f", },
     DiffAdd = { fg = "#5E8975", bg = "#202020", bold = true },    -- Success
     DiffChange = { bg = "#2A2A2A" },
     DiffDelete = { fg = "#B85C5C", bg = "#343434" },              -- Error
@@ -28,7 +28,7 @@ return {
     IncSearch = { bg = "#F3BE7C", fg = "#202020" },               -- Delta + placeholder
     Keyword = { fg = "#7890B0", bold = true },                    -- Muted azure
     Label = { fg = "#D1B280", underline = true },                 -- Builtin
-    LineNr = { fg = "#909090", bg = "#202020" },                  -- Secondary text + base
+    LineNr = { fg = "#5d6262", bg = "#353535" },
     LspInlayHint = { fg = "#6C8FA8" },                            -- Hint
     Macro = { fg = "#FFD700", bold = true },
     MatchParen = { fg = "#B0B0C8", bg = "#3E3E3E", bold = true }, -- Property
@@ -48,10 +48,10 @@ return {
     Question = { fg = "#F0F0F0", bold = true },
     Repeat = { fg = "#C7A86D", bold = true },
     Search = { fg = "#F0F0F0", bg = "#405060", underline = true }, -- Visual
-    SignColumn = { fg = "#3E3E3E", bold = true },
+    SignColumn = { fg = "#3f3f3f", bold = true, },
     Special = { fg = "#D1B280" },                                  -- Builtin
     SpecialChar = { fg = "#D4AF37", bold = true },
-    SpecialComment = { fg = "#787878", bold = true },
+    SpecialComment = { fg = "#82a282", bold = true, },
     SpecialKey = { fg = "#5E8975" }, -- Success
     SpellBad = { sp = "#B85C5C", fg = "#B85C5C" },
     SpellCap = { sp = "#4A89B5", fg = "#4A89B5" },
