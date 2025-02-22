@@ -26,7 +26,7 @@ end
 M.setup = function()
     M.clear_namespace()
 
-    vim.o.background = "dark"
+    -- vim.o.background = "dark"
     vim.o.termguicolors = true
 
     local all_highlights = require("zenburn.highlights")
