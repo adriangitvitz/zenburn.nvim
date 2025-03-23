@@ -2,7 +2,7 @@ return {
     Boolean = { fg = "#D4AF37" },                                 -- Muted gold (primary)
     Character = { fg = "#D4AF37", bold = true },
     ColorColumn = { bg = "#343434" },                             -- Secondary bg (color600)
-    Comment = { fg = "#E6E6E6", italic = true },                  -- Medium contrast
+    Comment = { fg = "#B2AA8E", italic = true },                  -- Medium contrast
     Conditional = { fg = "#B89E6D", bold = true },                -- Earthy orange (warning)
     Constant = { fg = "#A0A8D0", bold = true },                   -- Desat lavender (constant)
     Cursor = { bg = "#4A6B5E", fg = "#202020" },                  -- placeholder + success
