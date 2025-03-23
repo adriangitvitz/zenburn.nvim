@@ -2,10 +2,10 @@ return {
     Boolean = { fg = "#D4AF37" },                                 -- Muted gold (primary)
     Character = { fg = "#D4AF37", bold = true },
     ColorColumn = { bg = "#343434" },                             -- Secondary bg (color600)
-    Comment = { fg = "#787878" },                                 -- Medium contrast
-    Conditional = { fg = "#C7A86D", bold = true },                -- Earthy orange (warning)
+    Comment = { fg = "#787878", italic = true },                  -- Medium contrast
+    Conditional = { fg = "#B89E6D", bold = true },                -- Earthy orange (warning)
     Constant = { fg = "#A0A8D0", bold = true },                   -- Desat lavender (constant)
-    Cursor = { fg = "#202020", bg = "#5E8975", bold = true },     -- placeholder + success
+    Cursor = { bg = "#4A6B5E", fg = "#202020" },                  -- placeholder + success
     CursorColumn = { bg = "#2A2A2A" },                            -- Elevated surface (color700)
     CursorLine = { bg = "#2A2A2A" },
     CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },            -- Primary text + secondary bg
@@ -22,7 +22,7 @@ return {
     Float = { fg = "#909090" },                                   -- Secondary text
     FoldColumn = { fg = "#6A6A6A", bg = "#3E3E3E" },              -- Disabled + borders
     Folded = { fg = "#6A6A6A", bg = "#3E3E3E" },
-    Function = { fg = "#FFD700" },                                -- Gold (func)
+    Function = { fg = "#D4B800" },                                -- Gold (func)
     Identifier = { fg = "#D4AF37" },                              -- Primary gold
     Include = { fg = "#7890B0", bold = true },                    -- Keyword azure
     IncSearch = { bg = "#F3BE7C", fg = "#202020" },               -- Delta + placeholder
@@ -61,7 +61,7 @@ return {
     StatusLine = { fg = "#3E3E3E", bg = "#D4AF37" },   -- Border + primary
     StatusLineNC = { fg = "#343434", bg = "#787878" }, -- Secondary bg + comment
     StorageClass = { fg = "#8CA5A8", bold = true },    -- Type
-    String = { fg = "#D4A88F" },                       -- Ochre
+    String = { fg = "#C49A7F" },                       -- Ochre
     Structure = { fg = "#4A89B5", bold = true },       -- Info
     TabLine = { fg = "#909090", bg = "#2A2A2A", bold = true },
     TabLineFill = { fg = "#6A6A6A", bg = "#2A2A2A" },
