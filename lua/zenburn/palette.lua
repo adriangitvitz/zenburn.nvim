@@ -26,7 +26,7 @@ return {
     Identifier = { fg = "#D4AF37" },                              -- Primary gold
     Include = { fg = "#7890B0", bold = true },                    -- Keyword azure
     IncSearch = { bg = "#F3BE7C", fg = "#202020" },               -- Delta + placeholder
-    Keyword = { fg = "#7890B0", bold = true },                    -- Muted azure
+    Keyword = { fg = "#EDEDED", bold = true },                    -- Muted azure
     Label = { fg = "#D1B280", underline = true },                 -- Builtin
     LineNr = { fg = "#5d6262", bg = "#353535" },
     LspInlayHint = { fg = "#6C8FA8" },                            -- Hint
