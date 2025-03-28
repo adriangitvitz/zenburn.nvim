@@ -37,7 +37,7 @@ return {
     NonText = { fg = "#6A6A6A", bold = true },                    -- Disabled
     Normal = { fg = "#D8D8D8", bg = "NONE" },                     -- Primary fg
     NormalFloat = { bg = "#2A2A2A", fg = "#909090" },
-    Number = { fg = "#8CA5A8" },                                  -- Type teal
+    Number = { fg = "#F0F0F0" },                                  -- Type teal
     Operator = { fg = "#FFD700" },
     PmenuSel = { bg = "#3E3E3E", fg = "#F0F0F0", bold = true },   -- Border + highlight
     PmenuThumb = { bg = "#6A6A6A", fg = "#202020" },
