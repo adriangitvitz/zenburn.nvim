@@ -11,7 +11,7 @@ return {
     CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },            -- Primary text + secondary bg
     Debug = { fg = "#B85C5C", bold = true },                      -- Error red
     Define = { fg = "#FFD700", bold = true },                     -- Gold (func)
-    Delimiter = { fg = "#8f8f8f", },
+    Delimiter = { fg = "#D4B800", },
     DiffAdd = { fg = "#5E8975", bg = "#202020", bold = true },    -- Success
     DiffChange = { bg = "#2A2A2A" },
     DiffDelete = { fg = "#B85C5C", bg = "#343434" },              -- Error
