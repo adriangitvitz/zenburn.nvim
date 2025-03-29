@@ -1,22 +1,28 @@
 return {
-    Boolean = { fg = "#D4AF37" },                                 -- Muted gold (primary)
+    Boolean = { fg = "#D4AF37" },                               -- Muted gold (primary)
     Character = { fg = "#D4AF37", bold = true },
-    ColorColumn = { bg = "#343434" },                             -- Secondary bg (color600)
+    ColorColumn = { bg = "#343434" },                           -- Secondary bg (color600)
     Comment = { fg = "#C4B89E", underline = true },
-    Conditional = { fg = "#B89E6D", bold = true },                -- Earthy orange (warning)
-    Constant = { fg = "#A0A8D0", bold = true },                   -- Desat lavender (constant)
-    Cursor = { bg = "#5E8975", fg = "#1E1E1E" },                  -- placeholder + success
-    CursorColumn = { bg = "#2A2A2A" },                            -- Elevated surface (color700)
+    Conditional = { fg = "#B89E6D", bold = true },              -- Earthy orange (warning)
+    Constant = { fg = "#A0A8D0", bold = true },                 -- Desat lavender (constant)
+    Cursor = { bg = "#5E8975", fg = "#1E1E1E" },                -- placeholder + success
+    CursorColumn = { bg = "#2A2A2A" },                          -- Elevated surface (color700)
     CursorLine = { bg = "#2A2A2A" },
-    CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },            -- Primary text + secondary bg
-    Debug = { fg = "#B85C5C", bold = true },                      -- Error red
-    Define = { fg = "#FFD700", bold = true },                     -- Gold (func)
+    CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },          -- Primary text + secondary bg
+    Debug = { fg = "#B85C5C", bold = true },                    -- Error red
+    Define = { fg = "#FFD700", bold = true },                   -- Gold (func)
     Delimiter = { fg = "#D4B800", },
-    DiffAdd = { fg = "#5E8975", bg = "#202020", bold = true },    -- Success
+    DiffAdd = { fg = "#5E8975", bg = "#202020", bold = true },  -- Success
     DiffChange = { bg = "#2A2A2A" },
-    DiffDelete = { fg = "#B85C5C", bg = "#343434" },              -- Error
-    DiffText = { fg = "#F3BE7C", bg = "#202020", bold = true },   -- Delta
-    Directory = { fg = "#4A89B5", bold = true },                  -- Info blue
+    DiffDelete = { fg = "#B85C5C", bg = "#343434" },            -- Error
+    DiffText = { fg = "#F3BE7C", bg = "#202020", bold = true }, -- Delta
+    Directory = {
+        fg = "#88B5DD",                                         -- From terminal palette (index 4)
+        bg = "#2A3A44",                                         -- Custom dark blue (3.1:1 contrast with base bg)
+        bold = false,                                           -- Reduced text fringing
+        italic = true,                                          -- Improved shape recognition
+        underline = { style = "undercurl", sp = "#5998C0" }     -- Selection color pattern
+    },
     ErrorMsg = { fg = "#B85C5C", bg = "#202020", bold = true },
     Exception = { fg = "#C7A86D", bold = true },                  -- Warning
     Float = { fg = "#909090" },                                   -- Secondary text
