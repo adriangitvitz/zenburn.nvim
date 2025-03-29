@@ -24,7 +24,6 @@ return {
         fg = "#88DDB5",
         bg = "#1E1E1E",
         bold = true,
-        spacing = 2 -- Extra letter spacing
     },
     TSFuncMacro = { fg = c.Macro.fg },
     TSParameter = {
