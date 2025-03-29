@@ -29,7 +29,6 @@ return {
     TSParameter = {
         fg = "#B89E6D",
         bg = "#2A2A2A",
-        underline = { style = "dashed" }
     },
     TSParameterReference = { fg = c.ModeMsg.fg },
     TSMethod = { fg = c.Include.fg },
