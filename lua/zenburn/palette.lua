@@ -62,7 +62,14 @@ return {
     StatusLineNC = { fg = "#343434", bg = "#787878" }, -- Secondary bg + comment
     StorageClass = { fg = "#8CA5A8", bold = true },    -- Type
     String = { fg = "#C49A7F" },                       -- Ochre
-    Structure = { fg = "#4A89B5", bold = true },       -- Info
+    Structure = {
+        fg = "#88B5DD",                                -- From terminal palette (4=#88B5DD)
+        bg = "#2A3A44",                                -- New custom dark blue (3:1 contrast ratio with base bg)
+        bold = true,
+        underline = true,
+        undercurl = false,
+        sp = "#5998C0" -- Using selection color for underline
+    },
     TabLine = { fg = "#909090", bg = "#2A2A2A", bold = true },
     TabLineFill = { fg = "#6A6A6A", bg = "#2A2A2A" },
     TabLineSel = { fg = "#F0F0F0", bg = "#343434", bold = true },
