@@ -2,10 +2,10 @@ return {
     Boolean = { fg = "#D4AF37" },                                 -- Muted gold (primary)
     Character = { fg = "#D4AF37", bold = true },
     ColorColumn = { bg = "#343434" },                             -- Secondary bg (color600)
-    Comment = { fg = "#B2AA8E", italic = true },                  -- Medium contrast
+    Comment = { fg = "#C4B89E", underline = true },
     Conditional = { fg = "#B89E6D", bold = true },                -- Earthy orange (warning)
     Constant = { fg = "#A0A8D0", bold = true },                   -- Desat lavender (constant)
-    Cursor = { bg = "#4A6B5E", fg = "#202020" },                  -- placeholder + success
+    Cursor = { bg = "#5E8975", fg = "#1E1E1E" },                  -- placeholder + success
     CursorColumn = { bg = "#2A2A2A" },                            -- Elevated surface (color700)
     CursorLine = { bg = "#2A2A2A" },
     CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },            -- Primary text + secondary bg
@@ -26,7 +26,7 @@ return {
     Identifier = { fg = "#D4AF37" },                              -- Primary gold
     Include = { fg = "#7890B0", bold = true },                    -- Keyword azure
     IncSearch = { bg = "#F3BE7C", fg = "#202020" },               -- Delta + placeholder
-    Keyword = { fg = "#EDEDED", bold = true },                    -- Muted azure
+    Keyword = { fg = "#B85C5C", bold = true },                    -- Muted azure
     Label = { fg = "#D1B280", underline = true },                 -- Builtin
     LineNr = { fg = "#5d6262", bg = "#353535" },
     LspInlayHint = { fg = "#6C8FA8" },                            -- Hint
