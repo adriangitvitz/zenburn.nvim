@@ -31,7 +31,12 @@ return {
     Identifier = { fg = "#D4AF37" },                              -- Primary gold
     Include = { fg = "#7890B0", bold = true },                    -- Keyword azure
     IncSearch = { bg = "#F3BE7C", fg = "#202020" },               -- Delta + placeholder
-    Keyword = { fg = "#B85C5C", bold = true },                    -- Muted azure
+    Keyword = {
+        fg = "#D1B280",                                           -- From existing Special group color
+        bg = "#343434",                                           -- Secondary background color
+        bold = true,
+        blend = 15                                                -- Partial transparency
+    },
     Label = { fg = "#D1B280", underline = true },                 -- Builtin
     LineNr = { fg = "#5d6262", bg = "#353535" },
     LspInlayHint = { fg = "#6C8FA8" },                            -- Hint
