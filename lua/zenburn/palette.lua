@@ -21,7 +21,6 @@ return {
         bg = "#2A3A44",                                         -- Custom dark blue (3.1:1 contrast with base bg)
         bold = false,                                           -- Reduced text fringing
         italic = true,                                          -- Improved shape recognition
-        underline = { style = "undercurl", sp = "#5998C0" }     -- Selection color pattern
     },
     ErrorMsg = { fg = "#B85C5C", bg = "#202020", bold = true },
     Exception = { fg = "#C7A86D", bold = true },                  -- Warning
