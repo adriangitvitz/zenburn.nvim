@@ -2,7 +2,7 @@ return {
     Boolean = { fg = "#D4AF37" },                               -- Muted gold (primary)
     Character = { fg = "#D4AF37", bold = true },
     ColorColumn = { bg = "#343434" },                           -- Secondary bg (color600)
-    Comment = { fg = "#C4B89E", underline = true },
+    Comment = { fg = "#C4B89E", underline = false },
     Conditional = { fg = "#B89E6D", bold = true },              -- Earthy orange (warning)
     Constant = { fg = "#A0A8D0", bold = true },                 -- Desat lavender (constant)
     Cursor = { bg = "#5E8975", fg = "#1E1E1E" },                -- placeholder + success
@@ -76,7 +76,6 @@ return {
         fg = "#88B5DD",                                -- From terminal palette (4=#88B5DD)
         bg = "#2A3A44",                                -- New custom dark blue (3:1 contrast ratio with base bg)
         bold = true,
-        underline = true,
         undercurl = false,
         sp = "#5998C0" -- Using selection color for underline
     },
