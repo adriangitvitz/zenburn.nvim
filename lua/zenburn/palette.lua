@@ -71,7 +71,7 @@ return {
     StatusLine = { fg = "#3E3E3E", bg = "#D4AF37" },   -- Border + primary
     StatusLineNC = { fg = "#343434", bg = "#787878" }, -- Secondary bg + comment
     StorageClass = { fg = "#8CA5A8", bold = true },    -- Type
-    String = { fg = "#C49A7F" },                       -- Ochre
+    String = { fg = "#F5F5F5" },                       -- Ochre
     Structure = {
         fg = "#88B5DD",                                -- From terminal palette (4=#88B5DD)
         bg = "#2A3A44",                                -- New custom dark blue (3:1 contrast ratio with base bg)
