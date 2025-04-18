@@ -5,7 +5,7 @@ return {
     TSTitle = { fg = c.Title.fg },
     TSLiteral = { fg = c.String.fg },
     TSURI = { underline = true },
-    TSVariable = { fg = "#A0A8D0", italic = true }, -- Desaturated blue
+    TSVariable = { fg = "#caa98f", italic = true },
     TSPunctDelimiter = { fg = c.Delimiter.fg },
     TSPunctBracket = { fg = c.Delimiter.fg },
     TSPunctSpecial = { fg = c.Delimiter.fg },
@@ -21,14 +21,14 @@ return {
     TSFloat = { fg = c.Float.fg },
     TSFunction = { fg = c.Function.fg },
     TSFuncBuiltin = {
-        fg = "#88DDB5",
-        bg = "#1E1E1E",
+        fg = "#88ad9c",  -- Doom: teal/green
+        bg = "#090F19",  -- Doom: bg (deep background)
         bold = true,
     },
-    TSFuncMacro = { fg = c.Macro.fg },
+    TSFuncMacro = { fg = "#ec9a34" },
     TSParameter = {
-        fg = "#B89E6D",
-        bg = "#2A2A2A",
+        fg = "#ec9a34",  -- Doom: orange
+        bg = "#080E17",  -- Doom: base1
     },
     TSParameterReference = { fg = c.ModeMsg.fg },
     TSMethod = { fg = c.Include.fg },
@@ -50,7 +50,7 @@ return {
     TSType = { fg = c.Delimiter.fg },
     TSTypeBuiltin = { fg = c.Delimiter.fg },
     TSInclude = { fg = c.Include.fg },
-    TSVariableBuiltin = { fg = "#D1B280", bold = true },
+    TSVariableBuiltin = { fg = "#b9a3b7", bold = true }, -- Doom: magenta
     TSText = {},
     TSStrong = { bold = true, underline = true },
     TSEmphasis = { bold = true },

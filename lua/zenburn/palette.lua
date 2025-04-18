@@ -1,97 +1,81 @@
 return {
-    Boolean = { fg = "#D4AF37" },                               -- Muted gold (primary)
-    Character = { fg = "#D4AF37", bold = true },
-    ColorColumn = { bg = "#343434" },                           -- Secondary bg (color600)
-    Comment = { fg = "#C4B89E", underline = false },
-    Conditional = { fg = "#B89E6D", bold = true },              -- Earthy orange (warning)
-    Constant = { fg = "#A0A8D0", bold = true },                 -- Desat lavender (constant)
-    Cursor = { bg = "#5E8975", fg = "#1E1E1E" },                -- placeholder + success
-    CursorColumn = { bg = "#2A2A2A" },                          -- Elevated surface (color700)
-    CursorLine = { bg = "#2A2A2A" },
-    CursorLineNr = { fg = "#C8C8C8", bg = "#343434" },          -- Primary text + secondary bg
-    Debug = { fg = "#B85C5C", bold = true },                    -- Error red
-    Define = { fg = "#FFD700", bold = true },                   -- Gold (func)
-    Delimiter = { fg = "#D4B800", },
-    DiffAdd = { fg = "#5E8975", bg = "#202020", bold = true },  -- Success
-    DiffChange = { bg = "#2A2A2A" },
-    DiffDelete = { fg = "#B85C5C", bg = "#343434" },            -- Error
-    DiffText = { fg = "#F3BE7C", bg = "#202020", bold = true }, -- Delta
-    Directory = {
-        fg = "#88B5DD",                                         -- From terminal palette (index 4)
-        bg = "#2A3A44",                                         -- Custom dark blue (3.1:1 contrast with base bg)
-        bold = false,                                           -- Reduced text fringing
-        italic = true,                                          -- Improved shape recognition
-    },
-    ErrorMsg = { fg = "#B85C5C", bg = "#202020", bold = true },
-    Exception = { fg = "#C7A86D", bold = true },                  -- Warning
-    Float = { fg = "#909090" },                                   -- Secondary text
-    FoldColumn = { fg = "#6A6A6A", bg = "#3E3E3E" },              -- Disabled + borders
-    Folded = { fg = "#6A6A6A", bg = "#3E3E3E" },
-    Function = { fg = "#D4B800" },                                -- Gold (func)
-    Identifier = { fg = "#D4AF37" },                              -- Primary gold
-    Include = { fg = "#7890B0", bold = true },                    -- Keyword azure
-    IncSearch = { bg = "#F3BE7C", fg = "#202020" },               -- Delta + placeholder
-    Keyword = {
-        fg = "#D1B280",                                           -- From existing Special group color
-        bg = "#343434",                                           -- Secondary background color
-        bold = true,
-        blend = 15                                                -- Partial transparency
-    },
-    Label = { fg = "#D1B280", underline = true },                 -- Builtin
-    LineNr = { fg = "#5d6262", bg = "#353535" },
-    LspInlayHint = { fg = "#6C8FA8" },                            -- Hint
-    Macro = { fg = "#FFD700", bold = true },
-    MatchParen = { fg = "#B0B0C8", bg = "#3E3E3E", bold = true }, -- Property
-    ModeMsg = { fg = "#C7A86D" },
-    MoreMsg = { fg = "#F0F0F0", bold = true },                    -- Highlight
-    NonText = { fg = "#6A6A6A", bold = true },                    -- Disabled
-    Normal = { fg = "#D8D8D8", bg = "NONE" },                     -- Primary fg
-    NormalFloat = { bg = "#2A2A2A", fg = "#909090" },
-    Number = { fg = "#F0F0F0" },                                  -- Type teal
-    Operator = { fg = "#FFD700" },
-    PmenuSel = { bg = "#3E3E3E", fg = "#F0F0F0", bold = true },   -- Border + highlight
-    PmenuThumb = { bg = "#6A6A6A", fg = "#202020" },
-    Pmenu = { bg = "#2A2A2A", fg = "#909090" },
-    PmenuSbar = { bg = "#343434", fg = "#202020" },
-    PreCondit = { fg = "#7890B0", bold = true },
-    PreProc = { fg = "#FFD700", bold = true },
-    Question = { fg = "#F0F0F0", bold = true },
-    Repeat = { fg = "#C7A86D", bold = true },
-    Search = { fg = "#F0F0F0", bg = "#405060", underline = true }, -- Visual
-    SignColumn = { fg = "#3f3f3f", bold = true, },
-    Special = { fg = "#D1B280" },                                  -- Builtin
-    SpecialChar = { fg = "#D4AF37", bold = true },
-    SpecialComment = { fg = "#82a282", bold = true, },
-    SpecialKey = { fg = "#5E8975" }, -- Success
-    SpellBad = { sp = "#B85C5C", fg = "#B85C5C" },
-    SpellCap = { sp = "#4A89B5", fg = "#4A89B5" },
-    SpellLocal = { sp = "#5E8975", fg = "#5E8975" },
-    SpellRare = { sp = "#6C8FA8", fg = "#6C8FA8" },
-    Statement = { fg = "#8CA5A8" },                    -- Type
-    StatusLine = { fg = "#3E3E3E", bg = "#D4AF37" },   -- Border + primary
-    StatusLineNC = { fg = "#343434", bg = "#787878" }, -- Secondary bg + comment
-    StorageClass = { fg = "#8CA5A8", bold = true },    -- Type
-    String = { fg = "#F5F5F5" },                       -- Ochre
-    Structure = {
-        fg = "#88B5DD",                                -- From terminal palette (4=#88B5DD)
-        bg = "#2A3A44",                                -- New custom dark blue (3:1 contrast ratio with base bg)
-        bold = true,
-        undercurl = false,
-        sp = "#5998C0" -- Using selection color for underline
-    },
-    TabLine = { fg = "#909090", bg = "#2A2A2A", bold = true },
-    TabLineFill = { fg = "#6A6A6A", bg = "#2A2A2A" },
-    TabLineSel = { fg = "#F0F0F0", bg = "#343434", bold = true },
-    Tag = { fg = "#B85C5C", bold = true },                        -- Error
-    Title = { fg = "#F0F0F0", bold = true },
-    Todo = { fg = "#6C8FA8", bold = true },                       -- Hint
-    Type = { fg = "#8CA5A8" },                                    -- Desat teal
-    Typedef = { fg = "#A88DA5", bold = true },                    -- Parameter
-    Underlined = { fg = "#4A89B5", underline = true },            -- Info
-    VertSplit = { fg = "#3E3E3E", bg = "#343434" },               -- Border + secondary bg
-    Visual = { bg = "#405060", fg = "#F0F0F0" },                  -- Visual
-    VisualNOS = { bg = "#405060" },
-    WarningMsg = { fg = "#C7A86D", bg = "#343434", bold = true }, -- Warning
-    WildMenu = { bg = "#343434", fg = "#5E8975", underline = true },
-    WinSeparator = { fg = "#3E3E3E", bg = "#202020" },            -- Border + base
+  Boolean = { fg = "#c4a500" },                                -- yellow (doom: yellow)
+  Character = { fg = "#c4a500", bold = true },                 -- yellow (doom: yellow)
+  ColorColumn = { bg = "#080E17" },                            -- base1 (slightly lighter bg)
+  Comment = { fg = "#AAAAAA", underline = false },             -- grey (doom: grey)
+  Conditional = { fg = "#ec9a34", bold = true },               -- orange (doom: orange)
+  Constant = { fg = "#74b9b4", bold = true },                  -- cyan (doom: cyan)
+  Cursor = { bg = "#92a1ba", fg = "#090F19" },                 -- fg on bg
+  CursorColumn = { bg = "#070C14" },                           -- base2
+  CursorLine = { bg = "#070C14" },                             -- base2
+  CursorLineNr = { fg = "#92a1ba", bg = "#080E17" },           -- fg, base1
+  Debug = { fg = "#db9b9b", bold = true },                     -- red (doom: red)
+  Define = { fg = "#ec9a34", bold = true },                    -- orange (doom: orange)
+  Delimiter = { fg = "#b9a3b7" },                              -- magenta (doom: magenta)
+  DiffAdd = { fg = "#88ad9c", bg = "#020305", bold = true },   -- green, base8
+  DiffChange = { bg = "#060B12" },                             -- base3
+  DiffDelete = { fg = "#db9b9b", bg = "#080E17" },             -- red, base1
+  DiffText = { fg = "#ec9a34", bg = "#020305", bold = true },  -- orange, base8
+  Directory = { fg = "#79acd9", bg = "#060B12", italic = true }, -- dark-blue, base3
+  ErrorMsg = { fg = "#db9b9b", bg = "#020305", bold = true },  -- red, base8
+  Exception = { fg = "#ec9a34", bold = true },                 -- orange
+  Float = { fg = "#92a1ba" },                                  -- fg
+  FoldColumn = { fg = "#AAAAAA", bg = "#060B12" },             -- grey, base3
+  Folded = { fg = "#AAAAAA", bg = "#060B12" },                 -- grey, base3
+  Function = { fg = "#9dafc6" },                               -- blue (doom: blue)
+  Identifier = { fg = "#caa98f" },                             -- variables
+  Include = { fg = "#b9a3b7", bold = true },                   -- magenta
+  IncSearch = { bg = "#ec9a34", fg = "#090F19" },              -- orange, bg
+  Keyword = { fg = "#b9a3b7", bg = "#080E17", bold = true },   -- magenta, base1
+  Label = { fg = "#b9a3b7", underline = true },                -- magenta
+  LineNr = { fg = "#AAAAAA", bg = "#080E17" },                 -- grey, base1
+  LspInlayHint = { fg = "#8faead" },                           -- dark-cyan
+  Macro = { fg = "#ec9a34", bold = true },                     -- orange
+  MatchParen = { fg = "#b9a3b7", bg = "#060B12", bold = true },-- magenta, base3
+  ModeMsg = { fg = "#ec9a34" },                                -- orange
+  MoreMsg = { fg = "#c4a500", bold = true },                   -- yellow
+  NonText = { fg = "#AAAAAA", bold = true },                   -- grey
+  Normal = { fg = "#92a1ba", bg = "#090F19" },                 -- fg, bg
+  NormalFloat = { bg = "#060B12", fg = "#92a1ba" },            -- base3, fg
+  Number = { fg = "#ec9a34" },                                 -- orange (doom: orange)
+  Operator = { fg = "#79acd9" },                               -- dark-blue
+  PmenuSel = { bg = "#060B12", fg = "#92a1ba", bold = true },  -- base3, fg
+  PmenuThumb = { bg = "#AAAAAA", fg = "#020305" },             -- grey, base8
+  Pmenu = { bg = "#080E17", fg = "#92a1ba" },                  -- base1, fg
+  PmenuSbar = { bg = "#080E17", fg = "#020305" },              -- base1, base8
+  PreCondit = { fg = "#b9a3b7", bold = true },                 -- magenta
+  PreProc = { fg = "#ec9a34", bold = true },                   -- orange
+  Question = { fg = "#c4a500", bold = true },                  -- yellow
+  Repeat = { fg = "#ec9a34", bold = true },                    -- orange
+  Search = { fg = "#92a1ba", bg = "#060B12", underline = true }, -- fg, base3
+  SignColumn = { fg = "#060B12", bold = true },                -- base3
+  Special = { fg = "#b9a3b7" },                                -- magenta
+  SpecialChar = { fg = "#b9a3b7", bold = true },               -- magenta
+  SpecialComment = { fg = "#88ad9c", bold = true },            -- green
+  SpecialKey = { fg = "#88ad9c" },                             -- green
+  SpellBad = { sp = "#db9b9b", fg = "#db9b9b" },               -- red
+  SpellCap = { sp = "#79acd9", fg = "#79acd9" },               -- dark-blue
+  SpellLocal = { sp = "#88ad9c", fg = "#88ad9c" },             -- green
+  SpellRare = { sp = "#8faead", fg = "#8faead" },              -- dark-cyan
+  Statement = { fg = "#88ad9c" },                              -- teal
+  StatusLine = { fg = "#060B12", bg = "#92a1ba" },             -- base3, fg
+  StatusLineNC = { fg = "#080E17", bg = "#AAAAAA" },           -- base1, grey
+  StorageClass = { fg = "#88ad9c", bold = true },              -- teal
+  String = { fg = "#88ad9c" },                                 -- green
+  Structure = { fg = "#79acd9", bg = "#060B12", bold = true }, -- dark-blue, base3
+  TabLine = { fg = "#92a1ba", bg = "#080E17", bold = true },   -- fg, base1
+  TabLineFill = { fg = "#AAAAAA", bg = "#080E17" },            -- grey, base1
+  TabLineSel = { fg = "#c4a500", bg = "#080E17", bold = true },-- yellow, base1
+  Tag = { fg = "#db9b9b", bold = true },                       -- red
+  Title = { fg = "#92a1ba", bold = true },                     -- fg
+  Todo = { fg = "#8faead", bold = true },                      -- dark-cyan
+  Type = { fg = "#88ad9c" },                                   -- teal
+  Typedef = { fg = "#b9a3b7", bold = true },                   -- magenta
+  Underlined = { fg = "#79acd9", underline = true },           -- dark-blue
+  VertSplit = { fg = "#060B12", bg = "#080E17" },              -- base3, base1
+  Visual = { bg = "#060B12", fg = "#92a1ba" },                 -- base3, fg
+  VisualNOS = { bg = "#060B12" },                              -- base3
+  WarningMsg = { fg = "#ec9a34", bg = "#080E17", bold = true },-- orange, base1
+  WildMenu = { bg = "#080E17", fg = "#88ad9c", underline = true }, -- base1, green
+  WinSeparator = { fg = "#060B12", bg = "#090F19" },           -- base3, bg
 }
